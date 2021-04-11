@@ -6,16 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentership Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+
+    <nav id="nb1" class="navbar navbar-dark  navbar-expand-lg py-0 fixed-top">
+        <a href="#" class="navbar-brand">Mentorship</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nb" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nb">
+            <ul class="navbar-nav">
+                <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Programs</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Form</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Testimonials</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
     <div id="home">
-        <h1>Join Mentorship, Be the expert <br> From Zero to Hero</h1>
+        <h1 id="tagline">Join Mentorship, Be the expert <br> From Zero to Hero</h1>
     </div>
 
-   
+    <div class="programs">
+        <h2 style="text-align: center;" class=" py-5">Our programs</h2>
+        <div class="row isFlex">
+
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Web Development</h5>
+                      <p class="card-text">A Web Developer is responsible for the coding, design and layout of a website according to a company's specifications.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">App Development</h5>
+                      <p class="card-text">An app developer or a mobile app developer is someone who designs, develops, and implements mobile applications.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Graphic Designer</h5>
+                      <p class="card-text">Prepares work to be accomplished by gathering information and materials. Plans concept by studying information and materials.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Soft Skills</h5>
+                      <p class="card-text">Soft skills include interpersonal (people) skills, communication skills, listening skills, time management, and empathy, among others.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container isForm mt-5">
+        <form action="" method="GET">
+            <h1 class="heading">Mentor Form</h1>
+            <hr>
+            <h2>Contact information</h2>
+            <p>Name: <input type="text" name="name" placeholder="nitin rana" required></p>
+            <fieldset>
+                <legend>gender</legend>
+                <p>Male <input type="radio" name="gender"></p>
+                <p>Female <input type="radio" name="gender"></p>
+            </fieldset>
+            <p class="pt-3">Domain of expertise: <input type="number" name="pincode" required></p>
+            <p>Share some of your past work: <textarea cols="100" rows="8" name="address"></textarea></p>
+            <p>Email: <input type="email" name="email" id="email" required></p>
+            <p>Mobile: <input type="number" name="mobile" id="mobile" required></p>
+            <input type="submit" value="Submit">
+    
+        </form>
+
+    </div>
+
+    <div class="isFooter mt-5">
+        <div class="row p-3">
+            <div class="col-md-6 bottomBorder">
+                <h2 class="pb-5 pt-3 getIn">Get in touch</h3>
+                <div class="row leftRow">
+                    <div class="col">
+                        <p><a href="#" class="link"><i class="fa fa-whatsapp fa-2x"></i><span>Whatsapp Group</span></a></p>
+                        <p><a href="#" class="link"><span><i class="fa fa-linkedin fa-2x"></i>LinkedIn Page</span></a></p>
+                        <p><a href="#" class="link"><span><i class="fa fa-youtube fa-2x"></i>Youtube Channel</span></a></p>
+                    </div>
+                    <div class="col">
+                        <p><a href="" class="link"><span><i class="fa fa-facebook fa-2x"></i>Facebook Page</span></a></p>
+                        <p><a href="" class="link"><span><i class="fa fa-instagram fa-2x"></i>Instagram Page</span></a></p>
+                        <p><a href="" class="link"><span><i class="fa fa-telegram fa-2x"></i>Telegrsm Group</span></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 topBorder">
+
+                <img src="TTlogo.png" alt="Tech Table Logo" class="Image pb-4">
+
+                <div class="isRight">
+                    <div>
+                        <h4>Location</h4>
+                        <p>Nirmaan IITM, Chennai 600036</p>
+                    </div>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>admin@techtable.co.in</p>
+                    </div>
+                    <div>
+                        <h4>Mobile Number</h4>
+                        <p>9940332489</p>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(function(){
+            $(document).scroll(function(){
+                var $nav = $("#nb1");
+                $nav.toggleClass("scroll", $(this).scrollTop() > $nav.height());
+
+            });
+        });
+    </script>
+
+
     
 </body>
 </html>
