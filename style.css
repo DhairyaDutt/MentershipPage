@@ -1,0 +1,19 @@
+
+#home{
+    background-image: url("image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+h1{
+    color: aliceblue;
+    border-left: 20px solid rebeccapurple;
+    font-size: 4rem;
+    padding-left: 2rem;
+}
