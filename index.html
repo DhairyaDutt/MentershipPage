@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentership Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -15,17 +15,17 @@
 
     <nav id="nb1" class="navbar navbar-dark  navbar-expand-lg py-0 fixed-top">
         <a href="#" class="navbar-brand">Mentorship</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#nb" aria-label="Toggle Navigation">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="nb">
+        <div class="collapse navbar-collapse" id="navLinks">
             <ul class="navbar-nav">
-                <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Programs</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Form</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Testimonials</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Contact us</a></li>
+                <li class="navbar-item"><a href="/#home" class="nav-link">Home</a></li>
+                <li class="navbar-item"><a href="/#programs" class="nav-link">Programs</a></li>
+                <li class="navbar-item"><a href="/#isForm" class="nav-link">Form</a></li>
+                <li class="navbar-item"><a href="/#testimonial" class="nav-link">Testimonials</a></li>
+                <li class="navbar-item"><a href="/#isFooter" class="nav-link">Contact us</a></li>
             </ul>
         </div>
     </nav>
@@ -36,7 +36,7 @@
         <h1 id="tagline">Join Mentorship, Be the expert <br> From Zero to Hero</h1>
     </div>
 
-    <div class="programs">
+    <div id="programs" class="programs">
         <h2 style="text-align: center;" class=" py-5">Our programs</h2>
         <div class="row isFlex">
 
@@ -88,7 +88,7 @@
 
     </div>
 
-    <div class="container isForm mt-5">
+    <div id="isForm" class="container isForm mt-5">
         <form action="" method="GET">
             <h1 class="heading">Mentor Form</h1>
             <hr>
@@ -109,7 +109,43 @@
 
     </div>
 
-    <div class="isFooter mt-5">
+    <div id="testimonial" class='testimonial mx-auto mt-5 col-md-10 col-11'>
+        <div class="header text-muted"> What people are saying about Techtable </div>
+        <div class="row rowPerson" style="justify-content: center">
+            <div class="card person person col-md-3 col-11">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                        <div class="card-subtitle">
+                            <p> <small class="text-muted"> <i class="fa fa-quote-left pr-2"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal pl-0"></i> </small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card person col-md-3 col-11 second">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg"> </div>
+                        <div class="card-subtitle">
+                            <p> <small class="text-muted"> <i class="fa fa-quote-left pr-2"></i> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing <i class="fa fa-quote-left fa-flip-horizontal"></i> </small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card person col-md-3 col-11 third">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg"> </div>
+                        <div class="card-subtitle">
+                            <p> <small class="text-muted"> <i class="fa fa-quote-left pr-2"></i> I always wanted cool videos of my concerts never knew whom to talk to but they are amazing! <i class="fa fa-quote-left fa-flip-horizontal"></i> </small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="isFooter" class="isFooter mt-5">
         <div class="row p-3">
             <div class="col-md-6 bottomBorder">
                 <h2 class="pb-5 pt-3 getIn">Get in touch</h3>
@@ -151,15 +187,21 @@
 
     </div>
 
-    <script>
-        $(function(){
-            $(document).scroll(function(){
-                var $nav = $("#nb1");
-                $nav.toggleClass("scroll", $(this).scrollTop() > $nav.height());
+   
 
-            });
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script>
+    $(function(){
+        $(document).scroll(function(){
+            var $nav = $("#nb1");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+
         });
-    </script>
+    });
+</script>
 
 
     
