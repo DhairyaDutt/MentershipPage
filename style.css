@@ -59,7 +59,7 @@ html body{
 }
 
 .isFlex{
-    margin-left: 18rem;
+    padding-left: 16rem;
 }
 
 
@@ -147,23 +147,6 @@ input[type="number"] {
     border-right: 2px dotted lightgrey
 }
 
-@media only screen and (max-width: 600px) {
-    .second {
-        border: none;
-        border-top: 2px dotted lightgrey;
-        margin-top: 25px
-    }
-
-    .third {
-        border-top: 2px dotted lightgrey;
-        margin-top: 25px
-    }
-
-    .icon {
-        margin-top: 20px;
-        top: 0
-    }
-}
 
 .fa-quote-left:before {
     font-size: 7px;
@@ -245,6 +228,25 @@ input[type="number"] {
 
 }
 
+
+@media only screen and (max-width: 600px) {
+    .second {
+        border: none;
+        border-top: 2px dotted lightgrey;
+        margin-top: 25px
+    }
+
+    .third {
+        border-top: 2px dotted lightgrey;
+        margin-top: 25px
+    }
+
+    .icon {
+        margin-top: 20px;
+        top: 0
+    }
+}
+
 @media(max-width: 768px){
     .isRight{
         border-left: none;
@@ -255,6 +257,9 @@ input[type="number"] {
     }
     .bottomBorder{
         padding-bottom: 7%;
+    }
+    .isFlex{
+        padding-left: 4rem;
     }
   
 }
