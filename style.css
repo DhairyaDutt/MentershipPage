@@ -227,6 +227,24 @@ input[type="number"] {
 
 }
 
+@media only screen and (max-width: 640px) {
+    .second {
+        border: none;
+        border-top: 2px dotted lightgrey;
+        margin-top: 25px
+    }
+
+    .third {
+        border-top: 2px dotted lightgrey;
+        margin-top: 25px
+    }
+
+    .icon {
+        margin-top: 20px;
+        top: 0
+    }
+}
+
 
 @media only screen and (max-width: 480px) {
     html body{
@@ -256,6 +274,7 @@ input[type="number"] {
         align-items: center;
     }
 
+
     .getIn{
         padding-bottom: 10rem;
     }
@@ -277,23 +296,64 @@ input[type="number"] {
 
 }
 
-@media only screen and (max-width: 640px) {
-    .second {
-        border: none;
-        border-top: 2px dotted lightgrey;
-        margin-top: 25px
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+    html body{
+        overflow-x: hidden;
     }
 
-    .third {
-        border-top: 2px dotted lightgrey;
-        margin-top: 25px
+    #home{
+        height: 100vh;
     }
 
-    .icon {
-        margin-top: 20px;
-        top: 0
+    #tagline{
+        color: aliceblue;
+        border-left: none;
+        font-size: 3rem;
+        padding-left: 2rem;
     }
+
+    .programs{
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .isFlex{
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    /* .bottomBorder{
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    } */
+
+    .getIn{
+        padding-bottom: 10rem;
+    }
+
+    .leftRow{
+        padding-left: 5rem;
+    }
+
+    .link{
+        font-size: 0.8rem;
+    }
+
+    .fa-telegram{
+        padding-right: 7.4%;
+    }
+    
+
+    
+
 }
+
+
+
 
 @media(max-width: 768px){
     .isRight{
