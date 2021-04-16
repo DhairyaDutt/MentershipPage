@@ -218,6 +218,10 @@ input[type="number"] {
     padding-right: 10%;
 }
 
+.fa-telegram{
+    padding-right: 9%;
+}
+
 .link{
     text-decoration: none;
     color: #6c757d;
