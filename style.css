@@ -1,11 +1,5 @@
 html body{
     font-family: "roboto";
-    background-image: url("image6.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom right;
-
 }
 
 #nb1 .navbar-brand{
@@ -62,7 +56,13 @@ html body{
     margin: auto;
 }
 
-
+.backGround{
+    background-image: url("image6.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: bottom right;
+}
 
 
 .isForm{
