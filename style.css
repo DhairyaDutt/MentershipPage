@@ -1,5 +1,10 @@
 html body{
     font-family: "roboto";
+    background-image: url("image6.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: bottom right;
 }
 
 #nb1 .navbar-brand{
@@ -49,23 +54,20 @@ html body{
 .programs{
     background-color: whitesmoke;
     margin: 0;
-    padding: 0;
+    padding-left: 3.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
 .isFlex{
     margin: auto;
 }
 
-.backGround{
-    background-image: url("image6.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: bottom right;
-}
-
 
 .isForm{
+    padding-top: 12rem;
     background-color: #fff;
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
@@ -74,22 +76,18 @@ html body{
 }
 
 input[type="text"],
+input[type="number"],
 input[type="date"],
-input[type="email"]
+input[type="email"],
 input[type="password"],
 select,
 textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0.5rem;
 }
 
-fieldset{
-    background-color: #fff;
-    border: 1px solid #ccc;
-
-}
 
 .heading{
     text-align: center;
@@ -188,9 +186,6 @@ input[type="number"] {
 }
 
 
-
-
-
 .isFooter{
     color: #adb5bd;
     background-color: #212529;
@@ -233,7 +228,56 @@ input[type="number"] {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+    html body{
+        overflow-x: hidden;
+    }
+
+    #home{
+        height: 100vh;
+    }
+
+    #tagline{
+        color: aliceblue;
+        border-left: none;
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+
+    .programs{
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .isFlex{
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .getIn{
+        padding-bottom: 10rem;
+    }
+
+    .leftRow{
+        padding-left: 3rem;
+    }
+
+    .link{
+        font-size: 0.8rem;
+    }
+
+    .fa-telegram{
+        padding-right: 7.4%;
+    }
+    
+
+    
+
+}
+
+@media only screen and (max-width: 640px) {
     .second {
         border: none;
         border-top: 2px dotted lightgrey;
@@ -256,14 +300,10 @@ input[type="number"] {
         border-left: none;
     }
     .topBorder{
-        border-top: 3px solid #e76f51;
+        border-top: 3px solid #e9ecef;
         padding-top: 7%;
     }
     .bottomBorder{
         padding-bottom: 7%;
-    }
-    .isFlex{
-        padding-left: 4rem;
-    }
-  
+   
 }
