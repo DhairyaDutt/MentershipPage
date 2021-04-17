@@ -253,7 +253,11 @@ input[type="number"] {
 @media only screen and (max-width: 480px) {
 
     .navbar-item{
-        font-size: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .collapse{
+        padding-bottom: 2rem;
     }
     
 
@@ -310,6 +314,10 @@ input[type="number"] {
 
     .navbar-item{
         font-size: 1.2rem;
+    }
+    
+    .collapse{
+        padding-bottom: 2rem;
     }
 
     #home{
