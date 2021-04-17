@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 html body{
     font-family: "roboto";
     background-image: url("image6.jpg");
@@ -247,9 +251,12 @@ input[type="number"] {
 
 
 @media only screen and (max-width: 480px) {
-    html body{
-        overflow-x: hidden;
+
+    .navbar-item{
+        font-size: 2rem;
     }
+    
+
 
     #home{
         height: 100vh;
@@ -299,6 +306,10 @@ input[type="number"] {
 @media only screen and (min-width: 481px) and (max-width: 991px) {
     html body{
         overflow-x: hidden;
+    }
+
+    .navbar-item{
+        font-size: 1.2rem;
     }
 
     #home{
