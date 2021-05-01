@@ -53,7 +53,7 @@ body{
 }
 
 #tagline{
-    color: aliceblue;
+    color: white;
     border-left: 20px solid #adb5bd;
     font-size: 4rem;
     padding-left: 2rem;
@@ -80,8 +80,28 @@ body{
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 1.5rem;
-    opacity: 0.8;
 }
+
+.pic{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+#rakesh{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+/* input[type="text"],
+input[type="email"]
+{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+} */
 
 input[type="text"],
 input[type="number"],
@@ -90,7 +110,7 @@ input[type="email"],
 input[type="password"],
 select,
 textarea{
-    width: 100%;
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
@@ -104,12 +124,13 @@ textarea{
 input[type="submit"]{
     color: white;
     background-color: rgb(29, 97, 185);
-    width: 100%;
+    width: 25%;
     border: none;
     border-radius: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+   
 
 }
 
@@ -199,12 +220,13 @@ input[type="number"] {
     background-color: #212529;
 }
 
+
 .leftRow{
     padding-left: 5rem;
 }
 
 .Image{
-    max-width: 40%;
+    width: 40%;
     padding-left: 10%;
 }
 
@@ -215,6 +237,10 @@ input[type="number"] {
 
 .getIn{
     text-align: center;
+}
+
+.socialMedia{
+    margin-bottom: 2rem;
 }
 
 .fa{
@@ -252,6 +278,8 @@ input[type="number"] {
         top: 0
     }
 }
+
+
 
 
 @media only screen and (max-width: 480px) {
@@ -296,15 +324,22 @@ input[type="number"] {
 
     .leftRow{
         padding-left: 3rem;
+        display: inline;
     }
 
     .link{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .fa-telegram{
         padding-right: 7.4%;
     }
+
+    .Image{
+        width: 70%;
+        height: 40%;
+    }
+  
     
 
     
@@ -312,10 +347,7 @@ input[type="number"] {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-    /* html body{
-        overflow-x: hidden;
-    } */
-
+    
     .navbar-item{
         font-size: 1.2rem;
     }
@@ -369,6 +401,13 @@ input[type="number"] {
     .fa-telegram{
         padding-right: 7.4%;
     }
+    #rakesh{
+        display: none;
+    }
+    .Image{
+        width: 60%;
+        height: 40%;
+    }
     
 
     
@@ -382,12 +421,16 @@ input[type="number"] {
     .isRight{
         border-left: none;
     }
-    .topBorder{
+    /* .topBorder{
         border-top: 3px solid #e9ecef;
         padding-top: 7%;
-    }
+    } */
+    
     .bottomBorder{
         padding-bottom: 7%;
    
-}
+    }
+    #rakesh{
+        display: none;
+    }
 }
