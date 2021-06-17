@@ -230,14 +230,15 @@ input[type="number"] {
     padding-left: 5rem;
 }
 
-.Image{
+/* .Image{
     width: 40%;
     padding-left: 10%;
-}
+} */
 
 .isRight{
     border-left: 3px solid #ced4da;
     padding-left: 10%;
+    padding-top: 3%;
 }
 
 .getIn{
@@ -340,10 +341,10 @@ input[type="number"] {
         padding-right: 7.4%;
     }
 
-    .Image{
+    /* .Image{
         width: 70%;
         height: 40%;
-    }
+    } */
   
     
 
@@ -409,10 +410,11 @@ input[type="number"] {
     #rakesh{
         display: none;
     }
-    .Image{
+    /* .Image{
+
         width: 60%;
         height: 40%;
-    }
+    } */
     
 
     
@@ -426,10 +428,10 @@ input[type="number"] {
     .isRight{
         border-left: none;
     }
-    /* .topBorder{
+    .topBorder{
         border-top: 3px solid #e9ecef;
         padding-top: 7%;
-    } */
+    }
     
     .bottomBorder{
         padding-bottom: 7%;
@@ -438,6 +440,7 @@ input[type="number"] {
     #rakesh{
         display: none;
     }
+
 }
 
 @media only screen and (min-width: 990px) and (max-width: 1198px){
